@@ -1,7 +1,5 @@
 #! /bin/sh
 
-sxhkd &
-
 bspc monitor -d term firefox editor files music video extra 
 bspc config border_width         0
 bspc config window_gap          8
@@ -24,7 +22,5 @@ bspc rule -a Lxappearance state=floating follow=on
 
 $HOME/.config/polybar/launch.sh
 ~/.fehbg
-mpd &
-dunst &
 picom &
-./.config/bspwm/float.sh &
+$HOME/.config/bspwm/float.sh &
